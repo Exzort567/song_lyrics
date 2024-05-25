@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#lyrics {
+    font-size: 2em;
+    white-space: pre-wrap;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.play-btn {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.play-btn:hover {
+    background-color: #0056b3;
+}
+
+.background-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    opacity: 0;
+    animation: fadeIn 3s forwards; /* Adjust duration as needed */
+    z-index: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
