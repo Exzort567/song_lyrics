@@ -1,0 +1,9 @@
+#lyrics {
+    font-family: sans-serif;
+    white-space: pre-wrap; /* Wrap text at word breaks */
+    writing-mode: vertical-rl; /* Rotates text vertically */
+    /* Adjust these values for better formatting */
+    width: 200px; /* Adjust width as needed */
+    text-align: center; /* Center text vertically */
+  }
+  
